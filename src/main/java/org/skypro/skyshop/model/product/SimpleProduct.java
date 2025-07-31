@@ -7,7 +7,6 @@ public class SimpleProduct extends Product {
 
     public SimpleProduct(String name, int price, UUID id) {
         super(name, id);
-        realPrice(price);
         this.price = price;
     }
 

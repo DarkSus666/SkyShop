@@ -12,7 +12,6 @@ public class DiscountedProduct extends Product {
             throw new IllegalArgumentException("Ошибка: Неправильная скидка");
         }
         this.discount = discount;
-        realPrice(basePrice);
         this.basePrice = basePrice;
     }
 

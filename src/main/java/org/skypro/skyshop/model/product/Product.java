@@ -26,12 +26,6 @@ public abstract class Product implements Searchable {
 
     public abstract boolean isSpecial();
 
-    void realPrice(int price) {
-        if (price <= 0) {
-            throw new IllegalArgumentException("Ошибка: Неверная цена");
-        }
-    }
-
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;

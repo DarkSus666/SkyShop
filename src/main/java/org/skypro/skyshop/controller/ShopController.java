@@ -32,11 +32,6 @@ public class ShopController {
         return storageService.getAllArticles();
     }
 
-    @GetMapping("/searchables")
-    public Collection<Searchable> getAllSearchables() {
-        return storageService.getAllSearchables();
-    }
-
     @GetMapping("/search")
     public Collection<SearchResult> searchByPattern(@RequestParam String pattern) {
         return searchService.search(pattern);
