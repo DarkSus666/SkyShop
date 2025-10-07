@@ -12,9 +12,17 @@ public class UserBasket {
         this.items = Collections.unmodifiableList(new ArrayList<>(items));
         this.total = calculateTotal(items);
     }
-    private static double calculateTotal(List<BasketItem> items) {
+    private double calculateTotal(List<BasketItem> items) {
         return items.stream()
                 .mapToDouble(item -> item.getProduct().getPrice() * item.getQuantity())
                 .sum();
+    }
+
+    public List<BasketItem> getItems() {
+        return items;
+    }
+
+    public double getTotal() {
+        return total;
     }
 }
