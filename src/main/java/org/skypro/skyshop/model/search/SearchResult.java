@@ -30,4 +30,8 @@ public final class SearchResult {
     public String getContentType() {
         return contentType;
     }
+
+    public String getSearchTerm() {
+        return name;
+    }
 }
